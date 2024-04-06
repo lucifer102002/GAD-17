@@ -1,0 +1,24 @@
+Module Module1
+Sub Main()
+Dim obj As Box = New Box()
+Dim vol As Integer
+vol = obj.volume(2, 4, 4)
+Console.WriteLine("Length =" & obj.l)
+Console.WriteLine("Breadth =" & obj.b)
+Console.WriteLine("Height =" & obj.h)
+Console.WriteLine("Volume =" & vol)
+Console.ReadLine()
+End Sub
+Class Box
+Public l, b, h As Integer
+Function volume(ByVal i As Integer, ByVal j As Integer,
+_ByVal k As Integer)
+Dim v As Integer
+l = i
+b = j
+h = k
+v = l * b * h
+Return v
+End Function
+End Class
+End Module
