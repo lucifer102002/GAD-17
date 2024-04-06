@@ -1,0 +1,12 @@
+Module Module1
+Sub Main()
+Dim obj As New Test 'creating a object obj for Test Class
+obj.disp() 'Calling the disp method using obj
+Console.ReadLine()
+End Sub
+End Module
+Public Class Test
+Sub disp()
+Console.WriteLine("Welcome to VB.NET")
+End Sub
+End Class
